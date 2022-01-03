@@ -1,0 +1,10 @@
+{
+    "theme_color": "#c012e4",
+    "background_color": "#9b9b9b",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "ABC Racing",
+    "short_name": "AR",
+    "icons": []
+}
