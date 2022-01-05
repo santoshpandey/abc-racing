@@ -26,8 +26,9 @@ export default function Home({ products }) {
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="ABC Racing" />
       </Head>
+
       <Hero  />
-      <h1 className="text-grey-600 text-5xl font-bold m-2" id="fixture"> 
+      <h1 className="text-grey-600 text-5xl font-bold my-9 scroll-m-8 md:scroll-m-0" id="fixture"> 
       January 2022 Fixture 
       </h1> 
         <div className ="m-8 p-8 grid bg-indigo-900	grid-rows-2 
@@ -58,9 +59,12 @@ export default function Home({ products }) {
   )
 }
 
-export async function getStaticProps() {
-  //const products = await getProductsInCollection()
+export async function getStaticProps({locale}) {
   return {
-    props: {  }, // will be passed to the page component as props
+    props: {
+      messages: {
+        ...require(`../messages/navigation/${locale}.json`),
+      },
+    },
   }
 }

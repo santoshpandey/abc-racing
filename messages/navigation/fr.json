@@ -1,0 +1,8 @@
+{
+  "Navigation": {
+    "index": "Accueil",
+    "fixture": "Fixation",
+    "topfive": "Top cinq",
+    "switchLocale": "EN"
+  }
+}
