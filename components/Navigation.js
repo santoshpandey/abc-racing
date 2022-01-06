@@ -67,7 +67,7 @@ export default function Navigation() {
         </Link>
         {otherLocale && (
         <Link href={route} locale={otherLocale}>
-          <a role="link" onClick={() => setTheme(t('switchLocale', { locale: otherLocale }))} className='text-rose-900 font-bold underline decoration-dotted'>{t('switchLocale', { locale: otherLocale })}</a>
+          <a role="link" onClick={() => setTheme(t('switchLocale', { locale: otherLocale }))} className='text-th-accent-light font-bold underline decoration-dotted'>{t('switchLocale', { locale: otherLocale })}</a>
         </Link>
       )}
       

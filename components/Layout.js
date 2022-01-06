@@ -8,7 +8,7 @@ export default function Layout({ children }) {
   return (
     <div className="flex flex-col justify-between min-h-screen">
       <Header />
-      <main className='bg-th-background' role="Main">
+      <main className='bg-th-background' role="main">
         {children}
       </main>
       
