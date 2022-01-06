@@ -26,7 +26,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className='flex items-center font-sans flex-wrap bg-th-background-secondary p-3 '>
+    <nav role="navigation" className='flex items-center font-sans flex-wrap bg-th-background-secondary p-3 '>
       <div className="inline-flex items-center p-2 mr-4 ">
         <Link href="/" passHref>
           <a className="cursor-pointer text-th-accent-medium">
@@ -57,17 +57,17 @@ export default function Navigation() {
           }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
       <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
         <Link href="/">
-          <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-th-accent-medium font-bold items-center justify-center hover:bg-cyan-600 hover:text-white'>{t('index')}</a>
+          <a role="link" className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-th-accent-medium font-bold items-center justify-center hover:bg-cyan-600 hover:text-white'>{t('index')}</a>
         </Link>
         <Link href="/#fixture">
-          <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-th-accent-medium font-bold items-center justify-center hover:bg-cyan-600 hover:text-white'>{t('fixture')}</a>
+          <a role="link" className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-th-accent-medium font-bold items-center justify-center hover:bg-cyan-600 hover:text-white'>{t('fixture')}</a>
         </Link>
         <Link href="/#topfive">
-          <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-th-accent-medium font-bold items-center justify-center hover:bg-cyan-600 hover:text-white'>{t('topfive')}</a>
+          <a role="link" className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-th-accent-medium font-bold items-center justify-center hover:bg-cyan-600 hover:text-white'>{t('topfive')}</a>
         </Link>
         {otherLocale && (
         <Link href={route} locale={otherLocale}>
-          <a  onClick={() => setTheme(t('switchLocale', { locale: otherLocale }))} className='text-rose-900 font-bold underline decoration-dotted'>{t('switchLocale', { locale: otherLocale })}</a>
+          <a role="link" onClick={() => setTheme(t('switchLocale', { locale: otherLocale }))} className='text-rose-900 font-bold underline decoration-dotted'>{t('switchLocale', { locale: otherLocale })}</a>
         </Link>
       )}
       
