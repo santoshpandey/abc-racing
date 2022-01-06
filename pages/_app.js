@@ -4,6 +4,12 @@ import { ThemeProvider } from 'next-themes'
 import Layout from '../components/Layout'
 import { NextIntlProvider } from 'next-intl'
 
+if (typeof window !== 'undefined' && process.env.NODE_ENV !== 'production') {
+  const React = require('react');
+  const ReactDOM = require('react-dom');
+  const axe = require('@axe-core/react');
+  axe(React, ReactDOM, 1000);
+}
 
 function MyApp({ Component, pageProps }) {
   return(
