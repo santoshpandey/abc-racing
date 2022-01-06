@@ -12,7 +12,7 @@ export default function Hero() {
   let is4g = effectiveConnectionType === '4g' ? true : false;
   return (
     <div>
-        {!is4g ? <Image src={MyImage} alt="Hero" priority></Image> : <ReactPlayer
+        {!is4g ? <Image src={MyImage} alt="Hero" priority={true}></Image> : <ReactPlayer
       url="https://www.youtube.com/watch?v=PkkV1vLHUvQ"
       className="react-player"
       playing="true"
