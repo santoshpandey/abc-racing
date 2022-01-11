@@ -28,6 +28,21 @@ yarn dev
 - 💎 nexti18n for Localization 
 - 👀 Adaptive Loading to provie better user experience/performance as per the device capability.
 
+## Deployment and Monitoring
+
+**Automated Code review**
+![image](https://user-images.githubusercontent.com/2927803/148933121-9308c78d-e914-4f4b-8545-a6a1df223a90.png)
+
+
+******Deployment Checks**
+![image](https://user-images.githubusercontent.com/2927803/148932659-7d1d9bd8-ce04-4132-99eb-ccf13abc487e.png)
+
+**Performance Monitoring**
+![image](https://user-images.githubusercontent.com/2927803/148932825-6145645c-cd20-496b-9313-2a7589b14251.png)
+
+**Error Logging**
+![image](https://user-images.githubusercontent.com/2927803/148932986-b8d8027f-6e9d-4985-8da3-aea8a0f1cf4d.png)
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
